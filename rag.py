@@ -32,7 +32,7 @@ if os.path.exists("split_docs.pkl"):
     with open("split_docs.pkl", "rb") as f:
         split_docs = pickle.load(f)
 else:
-    # Cache data and serialize within pickle
+    # Cache data and preprocess
     print(" Processing raw PDFs...")
     raw_docs = load_pdfs("data")
     export_markdown_files(raw_docs)
