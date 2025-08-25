@@ -1,5 +1,6 @@
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+from tabulate import tabulate
 
 import time
 from operator import itemgetter
@@ -12,7 +13,6 @@ from rag import (
     RunnableMap,
     parser
 )
-from tabulate import tabulate
 
 def format_docs(docs):
     def clean(text):

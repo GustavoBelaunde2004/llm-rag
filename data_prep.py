@@ -5,7 +5,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 converter = DocumentConverter()
 
-# Load documents
+# Load docs
 def load_pdfs(path):
     documents = []
     for filename in os.listdir(path):
